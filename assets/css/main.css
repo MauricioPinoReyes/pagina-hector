@@ -1,11 +1,7 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
-/*
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -99,7 +95,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #242943;
+		/* background: #242943; */
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3418,6 +3414,7 @@ input, select, textarea {
 			transition-delay: 0.75s;
 			pointer-events: none;
 			background-color: #242943;
+			/* background-color: #7c7d79; */
 			content: '';
 			display: block;
 			height: 100%;
@@ -3596,7 +3593,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #2a2f4a;
+		/* background-color: #2a2f4a; */
 	}
 
 		#main > * {
@@ -3962,8 +3959,20 @@ input, select, textarea {
 
 /*###################  ESTILOS PROPIOS ############## */
 
+.seccion-new-color{
+	background-color:  #2a2f4a;;
+}
+
+.altura-new{
+	padding-top: 50px;
+}
+
 #logo-header{
 	padding-top: 10px;
+}
+
+.new-aling-form{
+	/* margin-left: 250px; */
 }
 
 
@@ -3995,3 +4004,34 @@ input, select, textarea {
     text-align: center;
     color: white; /* Asegura que el texto sea legible sobre la imagen */
 }
+
+
+
+/*Boton whatsapp*/
+.btn-wsp{
+	position:fixed;
+	width:60px;
+	height:60px;
+	line-height: 63px;
+	bottom:25px;
+	right:25px;
+	background:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	font-size:35px;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+	z-index:100;
+	transition: all 300ms ease;
+}
+.btn-wsp:hover{
+	background: #20ba5a;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+	.btn-wsp{
+		width:63px;
+		height:63px;
+		line-height: 66px;
+	}
+}
+/*Boton whatsapp*/
