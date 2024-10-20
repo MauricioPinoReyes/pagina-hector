@@ -148,19 +148,23 @@
 				<section id="contact">
 					<div class="inner" class="new-aling-form">
 						<section>
-							<form method="post" action="https://formspree.io/f/xqakkknk">
+							<form id="contactForm" method="post" action="https://formspree.io/f/xqakkknk">
 								<div class="fields">
 									<div class="field half">
 										<label for="name">Nombre</label>
 										<input type="text" name="name" id="name" />
+										<span id="nameError" style="color:red; display:none;">El nombre es obligatorio</span>
 									</div>
 									<div class="field half">
-										<label for="email">Correo Electronico</label>
+										<label for="email">Correo Electrónico</label>
 										<input type="text" name="email" id="email" />
+										<span id="emailError" style="color:red; display:none;">Correo inválido o vacío</span>
 									</div>
 									<div class="field">
 										<label for="message">Mensaje</label>
 										<textarea name="message" id="message" rows="6"></textarea>
+										<span id="messageError" style="color:red; display:none;">El mensaje es
+											obligatorio</span>
 									</div>
 								</div>
 								<ul class="actions">
@@ -217,6 +221,8 @@
 			</div>
 
 		<!-- Scripts -->
+			<script src="assets/js/validateForm.js"></script>
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
